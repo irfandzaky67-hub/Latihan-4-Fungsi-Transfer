@@ -1,0 +1,23 @@
+>> % a. Rasio terfaktor 
+>> Gzpk=zpk([-15 -16 -72], [0 -55 roots([1 27 52])'], 5)
+
+Gzpk =
+ 
+     5 (s+15) (s+16) (s+72)
+  ----------------------------
+  s (s+55) (s+24.91) (s+2.087)
+ 
+Continuous-time zero/pole/gain model.
+Model Properties
+>> % b. Rasio polynomial
+>> Gp=tf(Gzpk)
+
+Gp =
+ 
+  5 s^3 + 515 s^2 + 12360 s + 86400
+  ---------------------------------
+  s^4 + 82 s^3 + 1537 s^2 + 2860 s
+ 
+Continuous-time transfer function.
+Model Properties
+>> 
