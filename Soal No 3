@@ -1,0 +1,35 @@
+>> num = [1 2 3]
+
+num =
+
+     1     2     3
+
+>> den = [1 3 3 1]
+
+den =
+
+     1     3     3     1
+
+>> % rasio polynomial
+>> sys_tf = tf(num, den)
+
+sys_tf =
+ 
+      s^2 + 2 s + 3
+  ---------------------
+  s^3 + 3 s^2 + 3 s + 1
+ 
+Continuous-time transfer function.
+Model Properties
+>> % rasio terfaktor
+>> sys_zpk = zpk(sys_tf)
+
+sys_zpk =
+ 
+  (s^2 + 2s + 3)
+  --------------
+     (s+1)^3
+ 
+Continuous-time zero/pole/gain model.
+Model Properties
+>> 
