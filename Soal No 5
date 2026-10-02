@@ -1,0 +1,35 @@
+>> num = [1]
+
+num =
+
+     1
+
+>> den = [1 2 5]
+
+den =
+
+     1     2     5
+
+>> % a. bentuk polynomial
+>> sys_tf = tf(num, den)
+
+sys_tf =
+ 
+        1
+  -------------
+  s^2 + 2 s + 5
+ 
+Continuous-time transfer function.
+Model Properties
+>> % b. bentuk terfaktor
+>> sys_zpk = zpk(sys_tf)
+
+sys_zpk =
+ 
+        1
+  --------------
+  (s^2 + 2s + 5)
+ 
+Continuous-time zero/pole/gain model.
+Model Properties
+>> 
